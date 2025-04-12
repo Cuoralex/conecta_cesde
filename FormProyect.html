@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conecta CESDE</title>
+</head>
+<body></body><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Inscripción de Proyectos</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { background-color: #f2f2f2; padding: 10px; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; }
+    .section { margin-bottom: 30px; }
+    button { padding: 10px 20px; background-color: #4CAF5red0; color: white; border: none; }
+  </style>
+</head>
+<body>
+
+  <h1>Formulario de Inscripción de Proyectos</h1>
+
+  <form action="#" method="post">
+
+    <!-- 1. Información General del Proyecto -->
+    <div class="section">
+      <h2>1. Información General del Proyecto</h2>
+      <label>Nombre del Proyecto *</label>
+      <input type="text" name="nombre_proyecto" required>
+
+      <label>Descripción Breve *</label>
+      <textarea name="descripcion_breve" rows="3" required></textarea>
+
+      <label>Fecha de Inicio *</label>
+      <input type="date" name="fecha_inicio" required>
+
+      <label>Fecha de Finalización *</label>
+      <input type="date" name="fecha_fin" required>
+    </div>
+
+    <!-- 2. Datos del Responsable -->
+    <div class="section">
+      <h2>2. Datos del Responsable del Proyecto</h2>
+      <label>Nombre Completo *</label>
+      <input type="text" name="responsable_nombre" required>
+
+      <label>Cargo o Posición *</label>
+      <input type="text" name="responsable_cargo" required>
+
+      <label>Teléfono *</label>
+      <input type="tel" name="responsable_telefono" required>
+
+      <label>Email *</label>
+      <input type="email" name="responsable_email" required>
+    </div>
+
+    <!-- 3. Datos de la Organización -->
+    <div class="section">
+      <h2>3. Datos de la Organización o Entidad Proponente</h2>
+      <label>Nombre de la Organización *</label>
+      <input type="text" name="organizacion_nombre" required>
+
+      <label>Dirección *</label>
+      <input type="text" name="organizacion_direccion" required>
+
+      <label>NIT o Identificación Fiscal *</label>
+      <input type="text" name="organizacion_nit" required>
+
+      <label>Teléfono *</label>
+      <input type="tel" name="organizacion_telefono" required>
+
+      <label>Correo Electrónico *</label>
+      <input type="email" name="organizacion_email" required>
+
+      <label>Página Web</label>
+      <input type="url" name="organizacion_web">
+    </div>
+
+    <!-- 4. Objetivos del Proyecto -->
+    <div class="section">
+      <h2>4. Objetivos del Proyecto</h2>
+      <label>Objetivo General *</label>
+      <textarea name="objetivo_general" rows="2" required></textarea>
+
+      <label>Objetivos Específicos *</label>
+      <textarea name="objetivos_especificos" rows="3" required></textarea>
+    </div>
+
+    <!-- 5. Justificación -->
+    <div class="section">
+      <h2>5. Justificación</h2>
+      <label>Problemática a Abordar *</label>
+      <textarea name="problematica" rows="3" required></textarea>
+
+      <label>Beneficiarios *</label>
+      <textarea name="beneficiarios" rows="2" required></textarea>
+    </div>
+
+    <!-- 6. Alcance del Proyecto -->
+    <div class="section">
+      <h2>6. Alcance del Proyecto</h2>
+      <label>Actividades Principales *</label>
+      <textarea name="actividades" rows="3" required></textarea>
+
+      <label>Entregables *</label>
+      <textarea name="entregables" rows="2" required></textarea>
+    </div>
+
+    <!-- 7. Recursos Necesarios -->
+    <div class="section">
+      <h2>7. Recursos Necesarios</h2>
+      <label>Presupuesto Estimado *</label>
+      <input type="number" name="presupuesto" step="0.01" required>
+
+      <label>Recursos Humanos *</label>
+      <textarea name="recursos_humanos" rows="2" required></textarea>
+
+      <label>Infraestructura y Equipos *</label>
+      <textarea name="infraestructura" rows="2" required></textarea>
+    </div>
+
+    <!-- 8. Cronograma -->
+    <div class="section">
+      <h2>8. Cronograma</h2>
+      <label>Plan de Trabajo *</label>
+      <textarea name="cronograma" rows="3" required></textarea>
+    </div>
+
+    <!-- 9. Indicadores de Evaluación -->
+    <div class="section">
+      <h2>9. Indicadores de Evaluación</h2>
+      <label>Criterios de Éxito *</label>
+      <textarea name="criterios_exito" rows="2" required></textarea>
+    </div>
+
+    <!-- 10. Documentación Adicional -->
+    <div class="section">
+      <h2>10. Documentación Adicional</h2>
+      <label>Cartas de Aprobación o Aval</label>
+      <input type="file" name="cartas_aval" multiple>
+
+      <label>Certificaciones Relevantes</label>
+      <input type="file" name="certificaciones" multiple>
+    </div>
+
+    <!-- 11. Declaraciones y Firmas -->
+    <div class="section">
+      <h2>11. Declaraciones y Firmas</h2>
+      <label>
+        <input type="checkbox" name="compromiso" required>
+        Declaro que la información proporcionada es verdadera y autorizo su uso para fines de evaluación del proyecto.
+      </label>
+    </div>
+
+    <button type="submit">Enviar Proyecto</button>
+  </form>
+
+</body>
+</html>
