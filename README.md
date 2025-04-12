@@ -23,7 +23,10 @@ Facilitar la creación de experiencias reales para estudiantes y brindar solucio
 
 ## 📁 Estructura del proyecto
 ```
-conecta_cesde/ ├── landing_conecta_cesde.html ├── FormProyect.html └──
+conecta_cesde/ 
+├── landing_conecta_cesde.html 
+├── FormProyect.html 
+└──
 ```
 
 ## 🧩 Tecnologías utilizadas
